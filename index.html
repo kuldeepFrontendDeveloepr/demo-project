@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+
+            <input type="text" id="inputBox" placeholder="0">
+
+            <div>
+                <button value='AC' onclick="allClear()" class="all-clear">AC</button>
+                <button value='del' onclick="Back('del')" class="del">DEL</button>
+                <button value='%' onclick="getval('%')" class="operator">%</button>
+                <button value='/' onclick="getval('/')" class="operator">/</button>
+            </div>
+            <div>
+                <button value='7' onclick="getval('7')">7</button>
+                <button value='8' onclick="getval('8')">8</button>
+                <button value='9' onclick="getval('9')">9</button>
+                <button value='*' onclick="getval('*')" class="operator">x</button>
+            </div>
+            <div>
+                <button value='4' onclick="getval('4')">4</button>
+                <button value='5' onclick="getval('5')">5</button>
+                <button value='6' onclick="getval('6')">6</button>
+                <button value='-' onclick="getval('-')" class="operator">-</button>
+            </div>
+            <div>
+                <button value='1' onclick="getval('1')">1</button>
+                <button value="2" onclick="getval('2')">2</button>
+                <button value="3" onclick="getval('3')">3</button>
+                <button value="+" onclick="getval('+')" class="operator">+</button>
+            </div>
+            <div>
+                <button value="00" onclick="getval('00')">00</button>
+                <button value="0" onclick="getval('0')">0</button>
+                <button value="." onclick="getval('.')">.</button>
+                <button value="=" onclick="Total('')" class="equal">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js">
+        // function Total() {
+        //     let a = eval(document.getElementById("inputBox").value);
+        //     document.getElementById("inputBox").value = a;
+        // }
+        // function getval(num) {
+        //     let btn = document.getElementById("inputBox").value;
+        //     document.getElementById("inputBox").value += num;
+        // }
+        // function allClear() {
+        //     document.getElementById("inputBox").value = "";
+        // }
+        // function Back() {
+        //     let backspace = document.getElementById("inputBox").value;
+        //     document.getElementById("inputBox").value = backspace.slice(0,-1);
+        // }
+
+    </script>
+</body>
+
+</html>
